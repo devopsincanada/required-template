@@ -17,11 +17,11 @@ variables:
   value: true
 
 stages:
-  - stage: Stage-A
+  - stage: Stage_A
     displayName: Deploy Management Groups Stage
   
     jobs:
-    - job: Job-1
+    - job: Job_1
       steps:
       - task: PowerShell@2
         displayName: 'Error out'
@@ -36,7 +36,7 @@ stages:
       - script: |
           echo Stage-A, Job-1, Step-2
 
-    - job: Job-2
+    - job: Job_2
       steps:
       - script: |
           echo Stage-A, Job-2, Step-1
