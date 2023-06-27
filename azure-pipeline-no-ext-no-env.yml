@@ -8,13 +8,13 @@ trigger: none
 pool:
   vmImage: ubuntu-latest
 
-variables:
-- name: skipPreJobTask
-  value: true
-- name: skipPostJobTask
-  value: true
-- name: skipPostCheckoutTask
-  value: true
+# variables:
+# - name: skipPreJobTask
+#   value: true
+# - name: skipPostJobTask
+#   value: true
+# - name: skipPostCheckoutTask
+#   value: true
 
 steps:
 - script: echo Hello, world!
