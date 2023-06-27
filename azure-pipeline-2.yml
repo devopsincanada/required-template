@@ -2,7 +2,7 @@
 trigger: none
 
 extends:
-  template: start2.yml
+  template: start-2.yml
   parameters:
     buildSteps:  
       - bash: echo Test #Passes
