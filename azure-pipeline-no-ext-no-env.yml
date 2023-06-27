@@ -32,11 +32,13 @@ stages:
             Write-Host "##vso[task.complete result=Failed;]Failure triggered. $reason" -ForegroundColor Red
       - script: |
           echo Stage-A, Job-1, Step-1
+        condition: succeededOrFailed()
       
       - script: |
           echo Stage-A, Job-1, Step-2
 
     - job: Job_2
+      dependsOn: Job_1
       steps:
       - script: |
           echo Stage-A, Job-2, Step-1
