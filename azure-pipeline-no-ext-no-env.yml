@@ -17,7 +17,6 @@ variables:
   value: true
 
 stages:
-
   - stage: Stage_A
     displayName: Deploy Management Groups Stage
     jobs:
