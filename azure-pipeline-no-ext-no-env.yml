@@ -20,9 +20,7 @@ stages:
 
   - stage: Stage_A
     displayName: Deploy Management Groups Stage
-  
     jobs:
-
     - job: Job_1
       steps:
       - task: PowerShell@2
