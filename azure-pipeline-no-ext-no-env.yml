@@ -17,10 +17,12 @@ variables:
   value: true
 
 stages:
+
   - stage: Stage_A
     displayName: Deploy Management Groups Stage
   
     jobs:
+
     - job: Job_1
       steps:
       - task: PowerShell@2
@@ -33,7 +35,6 @@ stages:
       - script: |
           echo Stage-A, Job-1, Step-1
         condition: succeededOrFailed()
-      
       - script: |
           echo Stage-A, Job-1, Step-2
 
@@ -42,7 +43,6 @@ stages:
       steps:
       - script: |
           echo Stage-A, Job-2, Step-1
-      
       - script: |
           echo Stage-A, Job-2, Step-2
     
